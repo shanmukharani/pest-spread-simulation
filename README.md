@@ -43,6 +43,7 @@ The simulation evolves over discrete time steps using Cellular Automata rules:
 - Adjustable environmental parameters:
   - Humidity
   - Crop Density
+  - Wind Direction
 - Probabilistic pest spread model
 - Time-step based simulation
 - Risk heatmap visualization
@@ -95,14 +96,14 @@ Simulation Logic:
 
 ```
 PestSpread/
--│
--├── index.html
--├── style.css
--├── main.js
--├── grid.js
--├── simulation.js
--├── environment.js
--└── visualization.js
+│
+├── index.html
+├── style.css
+├── main.js
+├── grid.js
+├── simulation.js
+├── environment.js
+└── visualization.js
 ```
 ---
 
@@ -118,8 +119,28 @@ PestSpread/
 
 ---
 
+---
+
+## Usage Instructions
+
+1. Click on grid cells to mark initial infected crops.
+2. Adjust environmental parameters using sliders:
+   - Wind Direction (dropdown selection)
+   - Humidity (slider)
+   - Crop Density (slider)
+3. Start the simulation.
+4. Observe pest spread across time steps.
+5. Colors indicate infestation risk levels.
+
+### Color Legend
+- 🟩 Green — Healthy Crop
+- 🟨 Yellow — Low Risk
+- 🟧 Orange — Medium Risk
+- 🟥 Red — Infected Crop
+
+---
+
 ## Future Enhancements
-- Wind direction modeling
 - Multi-crop adaptability
 - AI-based spread prediction
 - Integration with drone or sensor data
