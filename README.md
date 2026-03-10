@@ -119,8 +119,6 @@ PestSpread/
 
 ---
 
----
-
 ## Usage Instructions
 
 1. Click on grid cells to mark initial infected crops.
