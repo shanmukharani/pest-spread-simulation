@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Pest Spread Simulation</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <h1>Pest Spread Simulation Using Cellular Automata</h1>
+    <div class="controls">
+        <h3>Environmental Factors</h3>
+        <label>Wind Direction</label>
+        <select id="wind">
+            <option value="none">None</option>
+            <option value="N">North</option>
+            <option value="S">South</option>
+            <option value="E">East</option>
+            <option value="W">West</option>
+        </select>
+        <br><br>
+        <label>Humidity</label>
+        <input type="range" id="humidity" min="0" max="1" step="0.1" value="0.5">
+        <span id="humidityValue">0.5</span>
+        <br><br>
+        <label>Crop Density</label>
+        <input type="range" id="density" min="0" max="1" step="0.1" value="0.5">
+        <span id="densityValue">0.5</span>
+        <br><br>
+        <button onclick="startSimulation()">Start Simulation</button>
+        <button onclick="resetSimulation()">Reset</button>
+    </div>
+    <hr>
+    <h3>Farmland Grid</h3>
+    <div id="grid"></div>
+    <script src="javascript/main.js"></script>
+    <script src="javascript/grid.js"></script>
+    <script src="javascript/environment.js"></script>
+    <script src="javascript/simulation.js"></script>
+    <script src="javascript/visualization.js"></script>
+</body>
+
+</html>
+
