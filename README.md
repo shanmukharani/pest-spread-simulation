@@ -43,6 +43,7 @@ The simulation evolves over discrete time steps using Cellular Automata rules:
 - Adjustable environmental parameters:
   - Humidity
   - Crop Density
+  - Wind Direction
 - Probabilistic pest spread model
 - Time-step based simulation
 - Risk heatmap visualization
@@ -52,16 +53,17 @@ The simulation evolves over discrete time steps using Cellular Automata rules:
 
 ## System Architecture
 
+```
 User Interaction (Sliders / Grid Clicks)
-        ↓
+↓
 Environment Model (environment.js)
-        ↓
+↓
 Cellular Automata Simulation (simulation.js)
-        ↓
+↓
 Grid State Management (grid.js)
-        ↓
+↓
 Visualization Layer (visualization.js)
-
+```
 ---
 
 ## Cellular Automata Model
@@ -92,6 +94,7 @@ Simulation Logic:
 
 ## Project Structure
 
+```
 PestSpread/
 │
 ├── index.html
@@ -101,14 +104,12 @@ PestSpread/
 ├── simulation.js
 ├── environment.js
 └── visualization.js
-
+```
 ---
 
 ## How to Run
 
-1. Clone the repository:
-
-git clone <repository-url>
+1. Clone the repository: git clone https://github.com/shanmukharani/pest-spread-simulation.git
 
 2. Open the project folder.
 
@@ -118,8 +119,26 @@ git clone <repository-url>
 
 ---
 
+## Usage Instructions
+
+1. Click on grid cells to mark initial infected crops.
+2. Adjust environmental parameters using sliders:
+   - Wind Direction (dropdown selection)
+   - Humidity (slider)
+   - Crop Density (slider)
+3. Start the simulation.
+4. Observe pest spread across time steps.
+5. Colors indicate infestation risk levels.
+
+### Color Legend
+- 🟩 Green — Healthy Crop
+- 🟨 Yellow — Low Risk
+- 🟧 Orange — Medium Risk
+- 🟥 Red — Infected Crop
+
+---
+
 ## Future Enhancements
-- Wind direction modeling
 - Multi-crop adaptability
 - AI-based spread prediction
 - Integration with drone or sensor data
@@ -128,8 +147,9 @@ git clone <repository-url>
 ---
 
 ## Contributors
-- ShanmukhaRani — Grid modeling, UI design, interaction logic
-- Joshna Vyakaranam — Simulation engine and environmental modeling
+- ShanmukhaRani — Grid modeling, UI design, and interaction logic
+- Joshna Vyakaranam — Environmental modeling and parameter integration
+- Kusuma — Pest spread simulation logic and visualization modules
 
 ---
 
