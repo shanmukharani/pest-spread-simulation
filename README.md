@@ -3,7 +3,7 @@
 ## Overview
 This project implements a grid-based pest infestation simulation platform that models how agricultural pests spread across farmland over time. The system applies Cellular Automata principles combined with probabilistic environmental modeling to predict infestation risk zones and support proactive pest management.
 
-The simulation enables visualization of pest spread influenced by environmental conditions such as humidity and crop density, allowing users to observe evolving risk patterns dynamically.
+The simulation enables visualization of pest spread influenced by environmental conditions such as wind direction, humidity and crop density, allowing users to observe evolving risk patterns dynamically.
 
 ---
 
@@ -129,12 +129,6 @@ PestSpread/
 3. Start the simulation.
 4. Observe pest spread across time steps.
 5. Colors indicate infestation risk levels.
-
-### Color Legend
-- 🟩 Green — Healthy Crop
-- 🟨 Yellow — Low Risk
-- 🟧 Orange — Medium Risk
-- 🟥 Red — Infected Crop
 
 ---
 
